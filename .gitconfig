@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[includeIf "gitdir:~/Documents/self/**/*"]
+  path = ~/.gitconfig-self
+
+# Common
+[pull]
+	ff = only
+[push]
+	ff = only
+[init]
+	defaultBranch = main

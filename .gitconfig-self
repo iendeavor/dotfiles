@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Ernest
+	email = iendeavor.github.io@gmail.com
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
