@@ -33,3 +33,9 @@ export GPG_TTY=$(tty)
 
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/Documents/packages/flutter/bin"
+
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# code Visual Studio Code
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
