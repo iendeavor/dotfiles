@@ -1,7 +1,7 @@
 [character]
-success_symbol = "[-- INSERT --](dim)"
-error_symbol = "[-- ERROR! --](dim)"
-vicmd_symbol = "[-- NORMAL --](dim)"
+success_symbol = "[>](dim)"
+error_symbol = "[!](red)"
+vicmd_symbol = "[-](dim)"
 
 [git_commit]
 tag_symbol = " tag "
