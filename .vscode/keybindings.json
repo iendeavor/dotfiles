@@ -7,14 +7,6 @@
     "when": "config.github.copilot.inlineSuggest.enable && !editorHasSelection"
   },
   {
-    "key": "cmd+k",
-    "command": "workbench.action.terminal.sendSequence",
-    "args": {
-      "text": "\u0003clear\u000d"
-    },
-    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-  },
-  {
     "key": "cmd+q",
     "command": "-workbench.action.quit"
   },
