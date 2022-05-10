@@ -1,6 +1,8 @@
 # This is Git's per-user configuration file.
 [includeIf "gitdir:~/Documents/self/**/*"]
   path = ~/.gitconfig-self
+[includeIf "gitdir:~/Documents/temp/**/*"]
+  path = ~/.gitconfig-self
 
 # Common
 [pull]
