@@ -18,13 +18,5 @@
     "key": "cmd+w",
     "command": "-workbench.action.closeWindow",
     "when": "!editorIsOpen && !multipleEditorGroups"
-  },
-  {
-    "key": "shift+cmd+w",
-    "command": "-workbench.action.closeWindow"
-  },
-  {
-    "key": "shift+cmd+w",
-    "command": "workbench.action.closeWindow"
   }
 ]
