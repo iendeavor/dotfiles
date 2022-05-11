@@ -35,7 +35,10 @@ bindkey '^[[B' history-substring-search-down
 export GPG_TTY=$(tty)
 
 # yarn
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/Documents/packages/flutter/bin"
+## brew install yarn
+
+# pnpm
+## brew install pnpm
 
 # code Visual Studio Code
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
