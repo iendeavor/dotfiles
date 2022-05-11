@@ -23,7 +23,7 @@ source $HOME/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## zsh-history-substring-search
 ### brew install zsh-history-substring-search
-### echo 'source ...'
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
