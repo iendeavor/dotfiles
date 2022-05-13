@@ -25,4 +25,7 @@ set noic
 set laststatus=2
 set background=dark
 set t_Co=256
+set tabstop=2
+set shiftwidth=2
 colorscheme ghdark
+
