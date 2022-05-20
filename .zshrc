@@ -39,9 +39,12 @@ export GPG_TTY=$(tty)
 
 # pnpm
 ## brew install pnpm
+export PNPM_HOME="/Users/ernest/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 
 # code Visual Studio Code
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export VSCODE_PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$VSCODE_PATH$PATH"
 
 # nvm
 ## brew install nvm
