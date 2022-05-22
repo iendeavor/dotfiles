@@ -27,6 +27,12 @@ source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-se
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+# kubectl
+## brew install kubectl
+
+# minikube
+## brew install minikube
+
 # deno
 # export DENO_INSTALL="$HOME/.deno"
 # export PATH="$DENO_INSTALL/bin:$PATH"
