@@ -13,3 +13,5 @@
 	defaultBranch = main
 [core]
 	pager = less -+FX
+[pager]
+	status = true
