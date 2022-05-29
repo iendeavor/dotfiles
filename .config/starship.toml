@@ -1,5 +1,5 @@
 [character]
-success_symbol = "[>](dim)"
+success_symbol = "[λ](dim)"
 error_symbol = "[!](red)"
 vicmd_symbol = "[-](dim)"
 
