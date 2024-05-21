@@ -18,5 +18,13 @@
     "key": "cmd+w",
     "command": "-workbench.action.closeWindow",
     "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "cmd+0",
+    "command": "workbench.action.zoomReset"
+  },
+  {
+    "key": "alt+`",
+    "command": "workbench.action.switchWindow"
   }
 ]
