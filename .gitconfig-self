@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Ernest
-	email = iendeavor.github.io@gmail.com
+	email = <>
 [commit]
 	gpgSign = true
 [tag]
