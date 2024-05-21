@@ -7,9 +7,9 @@ vicmd_symbol = "[-](dim)"
 tag_symbol = " tag "
 
 [git_status]
-ahead = ">"
-behind = "<"
-diverged = "<>"
+ahead = "↑"
+behind = "↓"
+diverged = "↓↑"
 renamed = "r"
 deleted = "x"
 
