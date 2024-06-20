@@ -39,6 +39,8 @@ source $HOME/.config/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 [ ! -d "$HOME/.config/zsh-syntax-highlighting" ] && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.config/zsh-syntax-highlighting
 source $HOME/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# vim
+[ ! -d "$HOME/.vim/bundle/Vundle.vim" ] && git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 
 # git
 export GPG_TTY=$(tty)
