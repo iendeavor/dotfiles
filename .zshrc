@@ -1,62 +1,27 @@
 # system
 export LANG=en_US.UTF-8
 
+export EDITOR='vim'
+
+
 # brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# zsh
-
-## starship https://github.com/starship/starship
-### brew install starship
+## starship
+brew list starship 1>/dev/null 2>/dev/null || brew install starship
 eval "$(starship init zsh)"
 
-## zsh config
-export EDITOR='vim'
-
-## vi-mode
-### git clone https://github.com/jeffreytse/zsh-vi-mode.git $HOME/.config/zsh-vi-mode
-source $HOME/.config/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-
-## zsh-syntax-highlighting
-### git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.config/zsh-syntax-highlighting
-source $HOME/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 ## zsh-history-substring-search
-### brew install zsh-history-substring-search
+brew list zsh-history-substring-search 1>/dev/null 2>/dev/null || brew install zsh-history-substring-search
 source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-# kubectl
-## brew install kubectl
-
-# minikube
-## brew install minikube
-
-# deno
-# export DENO_INSTALL="$HOME/.deno"
-# export PATH="$DENO_INSTALL/bin:$PATH"
-
-# git
-export GPG_TTY=$(tty)
-
-# yarn
-## brew install yarn
-
-# pnpm
-## brew install pnpm
-export PNPM_HOME="/Users/ernest/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-
-# code Visual Studio Code
-export VSCODE_PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-export PATH="$VSCODE_PATH$PATH"
-
-# nvm
-## brew install nvm
+## nvm
+brew list nvm 1>/dev/null 2>/dev/null || brew install nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 autoload -U add-zsh-hook
 load-nvmrc() {
   local node_version="$(nvm version)"
@@ -77,3 +42,24 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# zsh
+
+## vi-mode
+[ ! -d "$HOME/.config/zsh-vi-mode" ] && git clone https://github.com/jeffreytse/zsh-vi-mode.git $HOME/.config/zsh-vi-mode
+source $HOME/.config/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+## zsh-syntax-highlighting
+[ ! -d "$HOME/.config/zsh-syntax-highlighting" ] && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.config/zsh-syntax-highlighting
+source $HOME/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# git
+export GPG_TTY=$(tty)
+
+
+# code Visual Studio Code
+export VSCODE_PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$VSCODE_PATH$PATH"
