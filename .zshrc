@@ -22,7 +22,12 @@ bindkey '^[[B' history-substring-search-down
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+autoload -U add-zsh-hook
+load-nvmrc() {
+  nvm use --silent $(node "$HOME/.detect-node-version.js") || nvm install $(node "$HOME/.detect-node-version.js") && nvm use --silent $(node "$HOME/.detect-node-version.js")
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 
 # zsh
 
