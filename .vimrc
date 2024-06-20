@@ -3,6 +3,7 @@
 "
 " " Install Plugins
 " vim +PluginInstall +qall
+" Launch vim and run :PluginInstall
 
 " vundle begin
 set nocompatible              " be iMproved, required
@@ -13,7 +14,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'wojciechkepka/vim-github-dark'
+Plugin 'git://git.vv9k.com/vim-github-dark.git'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -27,5 +28,4 @@ set background=dark
 set t_Co=256
 set tabstop=2
 set shiftwidth=2
-colorscheme ghdark
-
+" colorscheme ghdark
