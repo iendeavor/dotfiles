@@ -13,6 +13,6 @@
 	defaultBranch = main
 [core]
 	pager = less -+FX
-	autocrlf = true
+	autocrlf = false
 [pager]
 	status = true
